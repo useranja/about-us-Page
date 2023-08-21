@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<!-- saved from url=(0043)http://127.0.0.1:5500/javascript/about.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       
+       .about-us{
+        background-color: antiquewhite;
+        text-align:center;
+        box-sizing:inherit;
+        height:900px;
+        width:85%;
+        border:15px solid cornsilk;
+        margin-left:70px;
+       }
+       
+        .box1{
+            height:200px;
+            width:90%;
+            padding:15px;
+            margin:auto;
+            background-color:coral;
+            opacity:0.8;
+            border-radius:5px;
+
+        }
+        .person1{
+            height:400px;
+            width:20%;
+            margin-right:30%;
+            margin:25px;
+            padding:10px;
+            background-color: azure;
+            border:15px solid pink;
+            margin:auto;
+            float:left;
+            margin-left:75px;
+            margin-top:15px;
+            
+        }
+        .person1 button{
+            width:75%;
+            padding:8px;
+            font-size: 15px;
+            border-radius: 3px;
+            border:none;
+        }
+ .person1 img{
+        opacity:1;
+        margin-top:10px;
+        border-radius:3px;
+    }
+    .person2{
+        height:400px;
+            width:20%;
+            margin-right:30%;
+            margin:25px;
+            padding:10px;
+            background-color: azure;
+            border:15px solid pink;  
+            display:block;
+            margin:auto;
+            margin-top:15px;
+            float:left;
+            margin-left:75px;
+    }
+    .person2 button{
+            width:75%;
+            padding:8px;
+            font-size: 15px;
+            border-radius: 3px;
+            border:none;}
+            .person2 img{
+        opacity:1;
+        margin-top:10px;
+        border-radius:3px;
+    }
+     .person3{
+        height:400px;
+            width:20%;
+            margin-right:30%;
+            margin:25px;
+            padding:10px;
+            background-color: azure;
+            border:15px solid pink;  
+            display:block;
+            margin:auto;
+            margin-top:15px;
+            box-shadow:0 4px 8px 0rgba(0,0,0,0.2);
+            float:left;
+            margin-left:75px;
+    }
+    .person3 button{
+            width:75%;
+            padding:8px;
+            font-size: 15px;
+            border-radius: 3px;
+            border:none;}
+            .person3 img{
+        opacity:1;
+        margin-top:10px;
+        border-radius:3px;
+    }
+    
+    
+
+    </style>
+</head>
+<body>
+    <div class="about-us">
+<div class="about">
+        <h1>About us</h1>
+    </div>
+        <div class="box1">
+            <h2>About us page</h2>
+        <p>Some text aboutwho we are and what to do.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis animi molestiae deleniti officia adipisci. accusamus libero eum, aspernatur, suscipit, explicabo quidem esse obcaecati?</p>
+</div>
+        <h2>Our team</h2>
+        <div class="person1">
+            <img src="./Document_files/images" alt="">
+            <h3>Anjali</h3>
+            <p>CEO &amp; Founder</p>
+            <p>this page tells about the team members </p>
+            <p>anjali@gmail.com</p>
+            <button>contact</button>
+        </div>
+        <div class="person2">
+            <img src="./Document_files/images" alt="">
+            <h3>Anjali</h3>
+            <p>CEO &amp; Founder</p>
+            <p>this page tells about the team members </p>
+            <p>anjali@gmail.com</p>
+            <button>contact</button>
+        </div>
+        <div class="person3">
+            <img src="./Document_files/images" alt="">
+            <h3>Anjali</h3>
+            <p>CEO &amp; Founder</p>
+            <p>this page tells about the team members </p>
+            <p>anjali@gmail.com</p>
+            <button>contact</button>
+        </div>
+        
+    </div>
+    
+
+
+
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
